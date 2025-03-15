@@ -1,0 +1,24 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  
+    --primary-color: #E87500ed;
+    --Orange-color: #F1692F;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+    
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    width: 100%;
+}
