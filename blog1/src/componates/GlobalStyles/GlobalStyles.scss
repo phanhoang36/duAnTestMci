@@ -1,24 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
-  
-    --primary-color: #E87500ed;
-    --Orange-color: #F1692F;
+:root {
+    --primary-color: #e87500ed;
+    --Orange-color: #f1692f;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-
-html{
+html {
     font-size: 62.5%;
-    
+    font-family: 'Roboto', sans-serif;
 }
 
-body{
-    font-family: "Roboto", sans-serif;
+body {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
     width: 100%;
+}
+
+.article {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #fff;
+    h3 {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: #f1692f;
+        margin-bottom: 0.5rem;
+        margin-top: 0;
+        font-weight: 700;
+    }
+    img {
+        width: 35rem;
+        aspect-ratio: 2 / 1;
+        background-color: #ddd;
+        border-radius: 2rem;
+        object-fit: cover;
+    }
+
+    p {
+        font-weight: 40rem;
+        font-size: 1.6rem;
+        color: #666;
+        line-height: 1.5;
+        margin-top: 0;
+    }
+    & > div {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+}
+
+.readMore {
+    margin-right: 2rem;
+    text-decoration: none;
+    color: #f28c38;
+    font-size: 14px;
+    align-self: flex-end;
+    font-style: italic;
+    margin-top: auto;
+    &:hover {
+        color: #d2691e;
+        text-decoration-line: underline;
+    }
 }

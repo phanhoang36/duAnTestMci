@@ -1,282 +1,181 @@
 @media (max-width: 768px) {
-  .content {
-    flex-direction: column;
-  }
-  .contentItem {
-    width: 100%;
-  }
-  .article {
-    margin-bottom: 10px;
-    margin-right: 2rem;
-    flex-direction: column;
-  }
-  .article img {
-    width: 100%;
-  }
+    .content {
+        flex-direction: column;
+    }
+    .contentItem {
+        width: 100%;
+    }
+    .article {
+        margin-bottom: 10px;
+        margin-right: 2rem;
+        flex-direction: column;
+    }
+    .article img {
+        width: 100%;
+    }
 }
 .header {
-    width: 100%; 
-    background-color: #f5f5f5; 
-    overflow: hidden; 
-  }
-  .item {
+    width: 100%;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+.item {
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
-
-  .imagePanel {
-  width: 100%;
-  padding: 20px;
-  background-color: #fff;
-  display: flex; /* Sử dụng Flexbox */
-  justify-content: space-between; /* Phân chia đều không gian */
-  gap: 20px; /* Khoảng cách giữa hai phần tử con */
-  }
-  .content {
-  margin-right: 2rem;
-  width: 100%;
-  padding: 20px;
-  background-color: #fff;
-  display: flex; /* Sử dụng Flexbox */
-  justify-content: space-between; /* Phân chia đều không gian */
-  gap: 20px; /* Khoảng cách giữa hai phần tử con */
 }
-  .banner {
-    width: 100%; 
-    height: auto; 
-    object-fit: contain; 
-    max-width: 100%; 
-    max-height: 100vh;  
-  }
-  .imageItem {
-    width: 35rem;
-    height: 20rem;
-    background-color: #F1692F;
+
+.imagePanel {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.content {
+    margin-right: 2rem;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 100%;
+}
+.imageItem {
+    width: 60rem;
+    height: 30rem;
+    background-color: #f1692f;
     border-radius: 15px;
     transition: transform 0.3s ease;
     &:hover {
-      transform: scale(1.02);
+        transform: scale(1.02);
     }
-  }
+}
 
-
-  .SearchIcon{
+.SearchIcon {
     width: 2.3rem;
     height: 2.3rem;
     border-width: 3px;
-
-  }
-
-  .searchBar {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 10px 40px 10px 10px; /* Chừa khoảng trống cho icon */
-  border: 1px solid #ccc;
-  border-radius: 2rem;
 }
 
 .input {
-  margin-left: 3rem;
-  border: none;
-  outline: none;
-  width: 100%;
-  background: transparent;
- /* Chừa khoảng trống cho icon */
- 
+    margin-left: 3rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
 }
 
 .searchIcon {
-  position: absolute;
-  left: 10px; /* Đặt icon ở bên phải */
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
+    position: absolute;
+    left: 10px; /* Đặt icon ở bên phải */
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
 
 .h5Event {
-  font-size: 24px;
-  font-weight: bold;
-  color: #f28c38;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 5px;
-
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 50%;
-    height: 2px;
-    background-color: #f28c38;
-  }
+    font-size: 24px;
+    font-weight: bold;
+    color: #f28c38;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #f28c38;
+    border-radius: 2px;
 }
 
 .itemEvent {
-  width: 60rem;
-  height: 30rem;
-  object-fit: cover;
-  border-radius: 15px;
+    width: 60rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
-.navTabs {
-  font-weight: 70rem;
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  text-align: center;
-  gap: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.contentItem {
+    margin-left: 4.5rem;
 }
-
-.navTab {
-  flex: 1; /* Đảm bảo mỗi tab chiếm đều không gian */
-  font-weight: 40rem;
-  line-height: 1.5;
-  flex: 1;
-  text-decoration: none;
-  color: #F1692F;
-  transition: background-color 0.3s ease;
-  font-size: 2.2rem;
-  box-sizing: border-box; /* Đảm bảo padding không làm lệch kích thước */
-  &:hover {
-    // border-radius: 5rem;
-    opacity: 0.8;
-  }
-}
-
-.contentItem{
-  margin-left: 9rem;
-  margin-right: 9rem;
-}
-
-
-// ContentDetail
-
-.contentDetail {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px; /* Khoảng cách giữa các bài viết */
-}
-
-.article {
-  display: flex;
-  align-items: flex-start; /* Căn trên cùng giữa ảnh và nội dung */
-  gap: 20px; /* Khoảng cách giữa ảnh và nội dung */
-  background-color: #fff; /* Nền trắng giống hình */  
-}
-
-
-
-.article img {
-  width: 30rem; /* Chiều rộng đầy đủ */
-  height: 17.5rem; /* Chiều cao cố định giống hình */
-  background-color: #ddd; /* Màu xám placeholder */
-  border-radius: 2rem; /* Bo góc giống hình */
-  object-fit: cover; /* Đảm bảo ảnh vừa khung */
-}
-
-
-
-.article h3 {
-
-  font-size: 1.6rem;
-  line-height: 1.5;
-  color: #F1692F;
-  margin-bottom: 0.5rem;  
-  margin-top: 0;
-}
-
-.article p {
-  font-weight: 40rem;
-  font-size: 1.6rem;
-  color: #666;
-  line-height: 1.5;
-  margin-top: 0;
-}
-.article > div {
-  display: flex;
-  flex-direction: column; /* Xếp tiêu đề, nội dung, và liên kết theo chiều dọc */
-  flex: 1; /* Chiếm toàn bộ không gian còn lại */
-}
-
-.readMore {
-  margin-right: 2rem;
-  text-decoration: none;
-  color: #f28c38; /* Màu cam giống "Xem thêm" trong hình */
-  font-size: 1.4rem;
-  align-self: flex-end; /* Căn liên kết "Xem thêm" sang bên phải */
-  margin-top: auto; /* Đẩy liên kết xuống dưới cùng của container */
-  &:hover {
-    color: #d2691e; /* Màu cam đậm hơn khi hover */
-  }
-}
-
 
 // thu vien anh
-
+.library {
+    height: 55rem;
+    width: 100%;
+}
 
 .imgGrids {
-  width: 100% ;
-  padding: 20px;
-  background-color: #F0F0F0;
-  text-align: center;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 52px 218px;
+    width: 100%;
+    background-color: #f0f0f0;
+    text-align: center;
 }
 .libraryImg {
-  margin-bottom: 20px;
+    margin-bottom: 54px;
 }
 
 .libraryImg h4 {
-  font-size: 24px;
-  color: orangered  ;
-  margin: 0;
-  position: relative;
-  display: inline-block;
-
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -1rem;
     width: 100%;
-    height: 0.3rem;
-    border-radius: 3rem;
-    background-color: orangered;
-  }
+    font-size: 2.4rem;
+    color: orangered;
+    position: relative;
+    font-weight: 700;
+    padding: 0 8px;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1rem;
+        width: 100%;
+        height: 0.3rem;
+        border-radius: 3rem;
+        background-color: orangered;
+    }
 }
 
-imgGrid {
-  display: grid;
-  grid-template-columns: 2fr 1fr; /* Hai cột với tỷ lệ 2:1 */
-  grid-template-rows: auto auto; /* Hai hàng */
-  gap: 20px; /* Khoảng cách giữa các ảnh */
-  max-width: 1200px;
-  margin: 0 auto;
+.imgGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: auto auto;
+    gap: 25px;
+    width: 100%;
 }
 
 .imgItem {
-  height: 200px; /* Chiều cao cố định */
-  border-radius: 10px; /* Bo góc nhẹ */
-  object-fit: cover; /* Đảm bảo ảnh vừa khung */
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
-/* Định dạng màu sắc cho từng ảnh theo vị trí */
 .imgItem:nth-child(1) {
-  background-color: #f28c38; /* Màu cam cho ảnh 1 (hàng 1, cột 1) */
+    grid-column: span 2 / span 2;
+    background-color: #ff6200;
 }
 
 .imgItem:nth-child(2) {
-  background-color: #e0e0e0; /* Màu xám cho ảnh 2 (hàng 1, cột 2) */
+    grid-column: span 1 / span 1;
+    background-color: #d3d3d3;
 }
 
 .imgItem:nth-child(3) {
-  background-color: #e0e0e0; /* Màu xám cho ảnh 3 (hàng 2, cột 1) */
+    grid-column: span 1 / span 1;
+    background-color: #d3d3d3;
 }
 
 .imgItem:nth-child(4) {
-  background-color: #f28c38; /* Màu cam cho ảnh 4 (hàng 2, cột 2) */
+    grid-column: span 2 / span 2;
+    background-color: #ff6200;
 }
